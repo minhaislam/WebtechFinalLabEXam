@@ -74,9 +74,11 @@ if(isset($_POST['signup'])){
 			<table cellpadding="5px">
 			<tr>
 				<td>
-			ID <br><input type="text" name="id" id="id" onkeyup="return fid(this);"><br><td><div id="em1"></div></td>
+			ID <br><input type="text" name="id" id="id" onkeyup="return fid(this);">
 
 			</td>
+			<br>
+			<td><div id="em1"></div></td>
 			</tr>
 			
 			<tr>

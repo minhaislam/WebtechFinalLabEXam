@@ -37,7 +37,7 @@ function valid(){
 			 	//return false;
 			 }		
 			else{return false;}
-			alert(name.value+"\n"+email+"\n"+uname.value+"\n"+pass.value+"\n"+radio()+"\n"+d.value+"/"+m.value+"/"+y.value);
+			alert(name.value+"\n"+id+"\n"+name.value+"\n"+pass.value);
 			return true;
 				//
 			
