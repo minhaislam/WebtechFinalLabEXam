@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-if(isset($_COOKIE['uname'])){
+if(isset($_COOKIE['name'])){
 
 ?>
 
@@ -13,10 +13,10 @@ if(isset($_COOKIE['uname'])){
 </head>
 <body align="center">
 	
-		<h1>Welcome Home!!!<br><?= $_SESSION['uname']?> </h1>
+		<h1>Welcome Home!!!<br><?= $_SESSION['name']?> </h1>
 		
 		<a href="profile.php">Profile</a><br>
-		<a href="viewinfo.php">View Info</a><br>
+		<a href="changepass.php">Change Password</a><br>
 		<a href="logout.php">Logout</a><br>
 		
 

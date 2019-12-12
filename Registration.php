@@ -64,39 +64,43 @@ if(isset($_POST['signup'])){
 <html>
 <head>
 	<title></title>
+	<script type="text/javascript" src="verify.js"></script>
 </head>
 <body>
 	<center>
-	<form method="POST" action="Registration.php">
+	<form method="POST" name="f1" onsubmit="return valid();" action="Registration.php">
 			
 			<legend><b>REGISTRATION<br><hr width="150"></b></legend>
 			<table cellpadding="5px">
 			<tr>
 				<td>
-			ID <br><input type="id" name="id" value="">
+			ID <br><input type="text" name="id" id="id" onkeyup="return fid(this);"><br><td><div id="em1"></div></td>
+
 			</td>
 			</tr>
 			
 			<tr>
 				<td>
-			Password <br><input type="password" name="pass" value="">
-			</td>
+			Password <br><input type="password" name="pass" id="pass" value="" onkeyup="return fpass(this);">
+			</td><br><td><div id="em2"></div></td>
+
 			</tr>
 			<tr>
 				<td>
-			Confirm Password<br><input type="password" name="cpass" value="">
-			</td>
+			Confirm Password<br><input type="password" name="cpass" id="cpass" value="" onkeyup="return fcpass(this);">
+			</td><br><td><div id="em3"></div></td>
 			</tr>
 			
 			<tr>
 				<td>
-			Name:<br><input type="text" name="name" value="">
-			</td>
+			Name:<br><input type="text" name="name" id="name" value="" onkeyup="return fname(this);">
+			</td><br><td><div id="em4"></div></td>
 			</tr>
 			<tr>
 				<td>
-			Email:<br><input type="email" name="email" value="">
+			Email:<br><input type="email" name="email" id="email" value="" onkeyup="return fmail(this);">
 			</td>
+			<br><td><div id="em5"></div></td>
 			</tr>
 			<tr>
 				<td>

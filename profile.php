@@ -1,7 +1,7 @@
 <?php
 
 
-if(isset($_COOKIE['uname'])){
+if(isset($_COOKIE['name'])){
 
 ?>
 

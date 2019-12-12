@@ -13,7 +13,7 @@
 			<table cellpadding="5px">
 			<tr>
 				<td>
-			Email:<br><input type="email" name="email" value="">
+			Id:<br><input type="id" name="id" value="">
 			</td>
 			</tr>
 			<tr>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 12, 2019 at 05:16 AM
+-- Generation Time: Dec 12, 2019 at 06:13 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 7.0.8
 
@@ -40,7 +40,8 @@ CREATE TABLE `info` (
 --
 
 INSERT INTO `info` (`id`, `pass`, `cpass`, `name`, `email`, `utype`) VALUES
-(1734048, '12345', '12345', 'minhaj', 'h@gmail.com', 'Admin');
+(1734048, '12345', '12345', 'minhaj', 'h@gmail.com', 'Admin'),
+(1734044, '11111', '11111', 'Habib', 'hh@gmail.com', 'User');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-if(isset($_COOKIE['uname'])){
+if(isset($_COOKIE['name'])){
 
 ?>
 
@@ -18,10 +18,11 @@ if(isset($_COOKIE['uname'])){
 			<thead>
 				<tr>
 				
-					<td align="center" width="500"><h1>Welcome Home!!! <?php echo $_SESSION['uname'];?> </h1></td>
+					<td align="center" width="500"><h1>Welcome Home!!! <?php echo $_SESSION['name'];?> </h1></td
+					
 
-<td><a href="viewinfo.php">View Info</a><br></td>
-		<td><a href="logout.php">Logout</a><br></td>
+
+		
 		
 	</td>
 
@@ -31,8 +32,11 @@ if(isset($_COOKIE['uname'])){
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td></td>
+				<tr
+				<td><a href="viewinfo.php">View Users</a><br></td>
+					<td><a href="profile.php">Profile</a><br>
+		<a href="changepass.php">Change Password</a><br>
+		<a href="logout.php">Logout</a><br></td>
 					
 		
 		<td></td>

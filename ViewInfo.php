@@ -156,7 +156,7 @@ elseif (isset($_POST['Back'])) {
 
 		
 		
-if(isset($_COOKIE['uname'])){
+if(isset($_COOKIE['name'])){
 
 ?>
 
@@ -193,10 +193,12 @@ if(isset($_COOKIE['uname'])){
 		<thead>
 		<tr>
 			<th>ID</th>
-			<th>Email</th>
+			
 			<th>Password</th>
-			<th>User Name</th>				
+			<th>Email</th>
+			<th>Name</th>				
 			<th>User Type</th>
+			<th></th>
 		</tr>	
           </thead>
 
@@ -212,9 +214,9 @@ if(isset($_COOKIE['uname'])){
 	?>
 					<tr>
 						<td><?php echo $user["id"];?></td>
+						<td><?php echo $user["pass"];?></td>
 		          		<td><?php echo $user["email"];?></td>
-		          		<td><?php echo $user["pass"];?></td>
-		          		<td><?php echo $user["uname"];?></td>
+		          		<td><?php echo $user["name"];?></td>
 		          		<td><?php echo $user["utype"];?></td>
 		          		 <td> <a href="ViewInfo.php?id=<?php echo $user['id'];?>">Delete</a>|<a href="edit.php?id=<?php echo $user['id'];?>"/>Edit</a></td>
 
@@ -243,17 +245,7 @@ if(isset($_COOKIE['uname'])){
 					<td>
 			Id:<br><input type="text" name="id" value="">
 			</td>
-				<td>
-			Username:<br><input type="text" name="uname" value="">
-			</td>
-			
-			
-				<td>
-			Email:<br><input type="email" name="email" value="">
-			</td>
-			
-			
-				<td>
+			<td>
 			Password <br><input type="password" name="pass" value="">
 			</td>
 			
@@ -262,14 +254,25 @@ if(isset($_COOKIE['uname'])){
 			Confirm Password<br><input type="password" name="cpass" value="">
 			</td>
 			
-
-			
-			<td>
-			<input type="radio" name="utype" value="User"/>User <br>
-			<input type="radio" name="utype" value="Admin"/>Admin
-			
+				<td>
+			Name:<br><input type="text" name="uname" value="">
 			</td>
 			
+			
+				<td>
+			Email:<br><input type="email" name="email" value="">
+			</td>
+			
+			
+				
+
+			
+			<select name="utype">
+			<option value="Type">Type</option>
+			<option value="Admin">Admin</option>
+  <option value="User">User</option>
+  </select>
+			</td>
 			
 			
 			<tr>
